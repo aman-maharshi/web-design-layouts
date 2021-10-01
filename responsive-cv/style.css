@@ -55,13 +55,30 @@ a {
     margin: 1.5rem auto;
     background: var(--container-color);
     box-shadow: 2px 2px 10px var(--container-color-alt);
+    position: relative;
+}
+.scroll-to-top {
+    display: none;
 }
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
         margin: 0;
     }
+    .scroll-to-top {
+        display: block;
+        background: var(--container-color-alt);
+        border-radius: 3px;
+        border: none;
+        padding: 3px;
+        position: fixed;
+        right: 12px;
+        bottom: 12px;
+        display: flex;
+        align-items: center;
+    }
 }
+
 .content__left {
     flex: 1;
     background: var(--container-color-alt);
