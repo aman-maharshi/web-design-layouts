@@ -29,6 +29,7 @@ function changeTheme() {
     Scroll to Top
 -------------------*/
 const scrollToTopBtn = document.querySelector(".scroll-to-top")
+scrollToTopBtn.style.display = "none"
 
 scrollToTopBtn.addEventListener("click", () => {
     window.scrollTo({
