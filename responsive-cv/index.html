@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" theme="light">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,21 +11,21 @@
         <div class="content">
             <div class="content__left">
                 <div class="profile">
-                    <button class="theme-toggle-btn"><img src="./icons/moon-regular-24.png" alt="theme-toggle" /></button>
+                    <button class="theme-toggle-btn"><box-icon name="moon" color="var(--title-color)"></box-icon></button>
                     <div class="picture"><img src="./images/picture.jpg" alt="profile-picture" /></div>
                     <h3 class="name"><span class="name__first">Aman</span> Maharshi</h3>
                     <p class="role">Frontend Developer</p>
 
                     <div class="details">
-                        <a href="#" class="details__email"><img src="./icons/envelope-regular-24.png" alt="email" />amanm4harshi@gmail.com</a>
-                        <a href="#" class="details__phone"><img src="./icons/phone-regular-24.png" alt="phone" />+91-9566238554</a>
+                        <a href="#" class="details__email"><box-icon class="icon" name="envelope" color="var(--title-color)"></box-icon>amanm4harshi@gmail.com</a>
+                        <a href="#" class="details__phone"><box-icon class="icon" name="phone" color="var(--title-color)"></box-icon>+91-9566238554</a>
                     </div>
                 </div>
                 <div class="details">
                     <h2 class="section-title">Links</h2>
-                    <a href="#" class="details__email"><img src="./icons/map-regular-24.png" alt="website" />amanmaharshi.com</a>
-                    <a href="#" class="details__email"><img src="./icons/github-logo-24.png" alt="github" />github.com/aman-maharshi</a>
-                    <a href="#" class="details__phone details__linkedin"><img src="./icons/linkedin-logo-24.png" alt="linkedin" />linkedin.com/in/amanmaharshi</a>
+                    <a href="#" class="details__email"><box-icon class="icon" name="map" color="var(--title-color)"></box-icon>amanmaharshi.com</a>
+                    <a href="#" class="details__email"><box-icon class="icon" name="github" type="logo" color="var(--title-color)"></box-icon>github.com/aman-maharshi</a>
+                    <a href="#" class="details__phone"><box-icon class="icon icon-linkedin" name="linkedin" type="logo" color="var(--title-color)"></box-icon>linkedin.com/in/amanmaharshi</a>
                 </div>
 
                 <div class="content-section">
@@ -36,7 +36,7 @@
                     <h2 class="section-title">Skills</h2>
                     <ul>
                         <li>JavaScript - React, Next.js</li>
-                        <li>CSS3 - Sass, Material UI, styled-components, Bootstrap</li>
+                        <li>CSS3 - Sass, Material UI, Bootstrap, styled-components</li>
                         <li>HTML5, Git</li>
                     </ul>
                 </div>
@@ -53,11 +53,11 @@
                         </div>
 
                         <ul>
-                            <li>Developed a dashboard application for registered vendors in <strong>Material UI</strong>.</li>
-                            <li>Worked on transitioning from <strong>React</strong> to <strong>Next.js</strong> and <strong>styled-components</strong> to incorporate serverside rendering for the website.</li>
-                            <li>Worked on improving page load time metrics by <strong>optimizing API calls</strong></li>
-                            <li>Worked on client side validation process before sending the data to backend</li>
-                            <li><u>Tech Stack</u> - JavaScript (React.js, Next.js), CSS (styled-components, Material UI)</li>
+                            <li>Worked on transitioning the entire website to Next.js and styled-components to incorporate serverside rendering.</li>
+                            <li>Developed a complete dashboard application for registered vendors in Material UI.</li>
+                            <li>Implementation included fetching and saving user data via API calls, creating responsive pages to work across all devices, fixing cross browser compatibility issues.</li>
+                            <li>Worked on improving page load time metrics by optimizing API calls</li>
+                            <li><u>Tech Stack</u> - JavaScript (React.js, Next.js), CSS (styled-components, Material UI), Git</li>
                         </ul>
                     </div>
                     <div>
@@ -81,6 +81,7 @@
 
                         <ul>
                             <li>Developing product promotional landing pages which were responsible for daily revenue generation for the company.</li>
+                            <li><u>Tech Stack</u> - HTML5, CSS3, Bootstrap, JavaScript, SVN</li>
                         </ul>
                     </div>
                     <div>
@@ -110,5 +111,8 @@
                 <br />
             </div>
         </div>
+
+        <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

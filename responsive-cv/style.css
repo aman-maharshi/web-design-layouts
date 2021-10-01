@@ -1,17 +1,5 @@
-@font-face {
-    font-family: "Lato";
-    src: url("/fonts/OpenSans-Regular.ttf");
-}
-@font-face {
-    font-family: "Lato";
-    src: url("/fonts/OpenSans-SemiBold.ttf");
-    font-weight: bold;
-}
-@font-face {
-    font-family: "Lato";
-    src: url("/fonts/OpenSans-Light.ttf");
-    font-weight: 300;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
 *,
 *::before,
 *::after {
@@ -27,9 +15,16 @@ html {
     --container-color-alt: #f0efef;
     --body-color: #fcfcfc;
 }
+html[theme="dark"] {
+    --title-color: #f2f2f2;
+    --text-color: #bfbfbf;
+    --container-color: #212121;
+    --container-color-alt: #181616;
+    --body-color: #2b2b2b;
+}
 body {
     margin: 0;
-    font-family: "Lato", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: var(--text-color);
     background: var(--body-color);
 }
@@ -59,11 +54,12 @@ a {
     max-width: 1000px;
     margin: 1.5rem auto;
     background: var(--container-color);
-    box-shadow: 2px 2px 10px lightgray;
+    box-shadow: 2px 2px 10px var(--container-color-alt);
 }
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
+        margin: 0;
     }
 }
 .content__left {
@@ -118,14 +114,10 @@ a {
 .details__email,
 .details__phone {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     margin: 10px 0;
 }
-.details__email img,
-.details__phone img {
-    margin-right: 0.5rem;
-}
-.details__linkedin img {
+.icon-linkedin {
     position: relative;
     top: -2px;
 }
@@ -149,4 +141,14 @@ a {
     margin-bottom: 0.5rem;
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 768px) {
+    .job-duration {
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.icon {
+    margin-right: 5px;
 }
