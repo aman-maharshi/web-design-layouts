@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.left-50 {
+    left: 50%;
+}
+.right-50 {
+    right: 50%;
+}
+.top-50 {
+    top: 50%;
+}
+.left-percentage {
+    left: 5%;
+}
+.nav-dot {
+    transition: background 200ms, border-color 200ms;
+}
+
+/*
+.selected-circle {
+    @apply border-theme bg-theme;
+}
+*/
+
+.nav-dot:hover span {
+    opacity: 1;
+}
